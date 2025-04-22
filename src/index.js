@@ -1,1 +1,5 @@
-alert("It's working hooray!")
+import home from "./pages/home";
+
+const homeButton = document.querySelector("#home")
+
+homeButton.addEventListener("click", home)
