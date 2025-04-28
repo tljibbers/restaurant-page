@@ -1,5 +1,6 @@
 export default function menu(){
     const content = document.querySelector("#content");
+    removeChild(content);
     const menuContainer = document.createElement("div");
     const menuTitle = document.createElement("h1");
     menuTitle.textContent = "MENU"
@@ -68,5 +69,11 @@ export default function menu(){
         menuContainer.appendChild(partContainer);
     })
     content.appendChild(menuContainer);  
+}
+
+function removeChild(container){
+    while(container.firstChild) {
+        container.removeChild(container.firstChild)
+    }
 }
 
