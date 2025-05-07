@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    height: 70px;
+    box-shadow: 10px 0px 10px grey;
+    background-color: brown;
+    
+}
+.header-flex {
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+#title {
+    position: relative;
+    left: 20px;
+    font-size: 30px;
+    font-family: "Delius Unicase";
+    font-weight: 700;
+    color: white;
+}
+
+#meatPng {
+    position: relative;
+    right: 30%;
+    width: 40px;
+    height: 40px;
+}
+.Buttons {
+    position: relative;
+    right: 20px;
+    top: 20%;
+}
+
+button {
+    font-family: "Delius Unicase";
+    border-color: brown;
+    border: none;
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.home-container {
+    display: flex;
+}
+
+#meat-resize {
+    height: 600px;
+    width: 600px;
+}

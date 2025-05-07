@@ -13,7 +13,7 @@ export default function about(){
     aboutUsHeader.textContent = "About Us"
 
     const aboutUsContent = document.createElement("h2");
-    aboutUsContent.textContent = "Here at [name] we pride ourselves at creating the best food for the people to eat! Everything is natural and homegrown, so there's no need to worry about pesky chemicals getting into your food."
+    aboutUsContent.textContent = "Here at The Meat Parlor we pride ourselves at creating the best food for the people to eat! Everything is natural and homegrown, so there's no need to worry about pesky chemicals getting into your food."
     
     const meatPieSVG = new Image();
     meatPieSVG.src = meatPie;

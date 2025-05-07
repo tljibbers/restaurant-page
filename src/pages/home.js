@@ -20,8 +20,13 @@ export default function home(){
 
     removeChild(contentContainer)
     homeContainer.appendChild(meatContainer);
-    homeContainer.appendChild(welcomeHeader);
-    homeContainer.appendChild(tagLine);
+    
+    const welcomeTag = document.createElement("div");
+    welcomeTag.classList.add("welcome-Tag");
+    welcomeTag.appendChild(welcomeHeader);
+    welcomeTag.appendChild(tagLine);
+    
+    homeContainer.appendChild(welcomeTag);
 
     contentContainer.appendChild(homeContainer);
    
