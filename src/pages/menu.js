@@ -47,17 +47,19 @@ export default function menu(){
         
         const title = document.createElement("h3");
         title.textContent = element.menuTitle;
+        title.classList.add("food-title");
 
         partContainer.appendChild(title);
 
         const partHolder = document.createElement("div");
+        partHolder.id = "part-holder"
         
         element.items.forEach((itemsPart) => {
             const itemContainer = document.createElement("div");
-            itemContainer.id = itemsPart.id
 
             const foodPic = new Image();
             foodPic.src = itemsPart.image;
+            foodPic.id = itemsPart.id
 
             const nameAndPriceContainer = document.createElement("div");
 
@@ -69,9 +71,11 @@ export default function menu(){
 
             nameAndPriceContainer.appendChild(nameOfItem);
             nameAndPriceContainer.appendChild(priceText);
+            nameAndPriceContainer.classList.add("name-and-price")
 
             itemContainer.appendChild(foodPic);
             itemContainer.appendChild(nameAndPriceContainer);
+            itemContainer.classList.add("item-container")
 
             partHolder.appendChild(itemContainer);
         })

@@ -17,15 +17,19 @@ export default function about(){
     
     const meatPieSVG = new Image();
     meatPieSVG.src = meatPie;
+    meatPieSVG.id = "meat-Pie"
 
     aboutUsContainer.appendChild(aboutUsHeader);
     aboutUsContainer.appendChild(aboutUsContent);
+    aboutUsContainer.classList.add("about-us")
 
     aboutUsMainContainer.appendChild(aboutUsContainer);
     aboutUsMainContainer.appendChild(meatPieSVG);
+    aboutUsMainContainer.classList.add("about-us-flex")
 
     const sheepSVG = new Image();
     sheepSVG.src = sheep;
+    sheepSVG.id = "sheep"
 
     const contactUsHeader = document.createElement("h1");
     contactUsHeader.textContent = "Want To Contact Us?"
@@ -35,9 +39,11 @@ export default function about(){
 
     contactUsContainer.appendChild(contactUsHeader);
     contactUsContainer.appendChild(contactUsContent);
+    contactUsContainer.classList.add("contact-us");
 
-    contactUsMainContainer.appendChild(contactUsContainer);
     contactUsMainContainer.appendChild(sheepSVG);
+    contactUsMainContainer.appendChild(contactUsContainer);
+    contactUsMainContainer.classList.add("contact-us-flex");
 
     container.appendChild(aboutUsMainContainer);
     container.appendChild(contactUsMainContainer);

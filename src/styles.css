@@ -16,6 +16,10 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+.title-to-image {
+    display: flex;
+}
 #title {
     position: relative;
     left: 20px;
@@ -27,7 +31,7 @@ header {
 
 #meatPng {
     position: relative;
-    right: 30%;
+    left: 30px;
     width: 40px;
     height: 40px;
 }
@@ -52,9 +56,87 @@ button:hover {
 
 .home-container {
     display: flex;
+    margin-left: 15%;
+    margin-top: 3%;
 }
 
 #meat-resize {
     height: 600px;
     width: 600px;
+}
+
+.welcome-Tag {
+    font-family: "Delius Unicase";
+    position: relative;
+    top: 200px;
+}
+
+.appetizer, .main-course, .beverages{ 
+    padding-left: 8%
+}
+
+#part-holder {
+   display: flex;
+   gap: 20px;
+}
+
+#chicken-wings, #meatballs, #sausage {
+    width: 250px;
+    height: 250px;
+    margin-left: 25%;
+}
+
+#pork, #chicken, #steak {
+    width: 250px;
+    height: 250px;
+    margin-left: 25%;
+}
+
+#milkshake, #water, #coffee {
+    width: 250px;
+    height: 250px;
+    margin-left: 25%;
+}
+
+.item-container {
+    border-style: solid;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.name-and-price {
+    font-family: "Delius Unicase";
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-title {
+    font-family: "Delius Unicase";
+}
+
+#sheep, #meat-Pie {
+    width: 600px;
+    height: 600px;
+}
+
+.about-us {
+    width: 800px;
+    font-family: "Delius Unicase";
+}
+
+.about-us-flex {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+}
+
+.contact-us {
+    width: 800px;
+    font-family: "Delius Unicase";
+}
+
+.contact-us-flex {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
 }
